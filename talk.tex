@@ -134,26 +134,19 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{XKCD \#927}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.8\textwidth]{images/927_v4.png}
-    \end{figure}
-\end{frame}
-
 \begin{frame}{Что хорошо?}
     \begin{itemize}
         \item Большая поддержка конвертации между фреймворками.
-        \item Версии opset'ов для хранения старых моделей.
-        \item Активное развитие.
         \item Большое коммьюнити, поддерживающее редкие конвертаторы.
+        \item Активное развитие.
+        \item Версии opset'ов для хранения старых моделей.
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Когда не надо использовать}
 
 \begin{itemize}
-    \item Разработка и прод в одной экосистеме (TensorFLow, MxNet).
+    \item Разработка и прод в одной экосистеме (TensorFlow, MxNet).
     \item Конвертация через ONNX требует больше усилий, чем конвертация напрямую.
     \item Модель оптимизировалась под конкретный фреймворк (и это не ONNX).
 \end{itemize}
@@ -168,6 +161,13 @@
     \item Более удобные инструменты работы с сериализованными моделями.
 \end{itemize}
     
+\end{frame}
+
+\begin{frame}{XKCD \#927}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/927_v4.png}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Альтернативы}
@@ -213,12 +213,12 @@
 \end{frame}
 
 \begin{frame}{Не всё так просто}
-\begin{block}{}
+\begin{alertblock}{}
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{images/conv_error.png}
 \end{figure}
-\end{block}
+\end{alertblock}
 \end{frame}
 
 \begin{frame}{Особенности конвертации из PyTorch}
@@ -293,6 +293,38 @@ PyTorch при конвертации использует собственно�
     \item Отладка и проверка корректности моделей.
     \item Мобильные и другие платформо-специфичные фреймворки.
 \end{itemize}
+    
+\end{frame}
+
+\begin{frame}[plain]
+
+\centering \Huge
+Спасибо за внимание!
+
+\vspace{17mm}
+\Large
+\begin{tabularx}{50mm}{Xl}
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/ods.png}
+      }
+      & @vuvko \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/1200px-Telegram_2019_Logo.png}
+      }
+      & @vuvko \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/GitHub-Mark-120px-plus.png}
+      }
+      & vuvko \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/1920px-XMPP_logo.svg.png}
+      }
+      & vuvko@fmap.me \\
+      \noindent\parbox[c]{\hsize}{
+          \includegraphics[width=7mm]{images/1200px-Gmail_Icon.svg.png}
+      }
+      & vuvko@fmap.me
+\end{tabularx}
     
 \end{frame}
 
